@@ -1,0 +1,124 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+    background-color: #121212;
+    color: #f0f2f5;
+}
+
+/* Counter UI Box */
+.counter-card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark .counter-card {
+    background-color: #1e1e1e;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#counterValue {
+    font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+body.dark #counterValue {
+    color: #39b5ff;
+}
+
+/* Layout for controls */
+.button-group {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+/* Button Foundations */
+.action-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.action-btn:active {
+    transform: scale(0.95);
+}
+
+.value-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.value-btn:hover {
+    background-color: #0056b3;
+}
+
+.reset-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.reset-btn:hover {
+    background-color: #bd2130;
+}
+
+/* Floating Theme Switcher Button */
+.theme-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid #333333;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #333333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+body.dark .theme-btn {
+    border-color: #f0f2f5;
+    color: #f0f2f5;
+    background-color: transparent;
+}
+
+.theme-btn:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark .theme-btn:hover {
+    background-color: #f0f2f5;
+    color: #121212;
+}
